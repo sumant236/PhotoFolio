@@ -189,7 +189,7 @@ export const ImagesList = ({ albumId, albumName, setSelectedAlbum }) => {
         />
       )}
       <div className={styles.top}>
-        <span onClick={onBack}>
+        <span onClick={() => setSelectedAlbum(null)}>
           <img src="/assets/back.png" alt="back" />
         </span>
         <h3>Images in {albumName}</h3>
